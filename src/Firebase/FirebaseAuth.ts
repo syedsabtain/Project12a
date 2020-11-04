@@ -11,7 +11,7 @@ export const LoginUser = async (email:string,password:string) => {
 
         const user = await firebase.auth().signInWithEmailAndPassword(email, password).catch((error)=>{
 
-            // window.alert(error+'eorfaceboasdf')
+            // window.alert(error+'eorfaceboasdf') 
         })
        
     return user
