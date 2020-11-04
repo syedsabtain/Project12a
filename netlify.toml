@@ -2,15 +2,6 @@
   command = "yarn build"
   publish = "public/"
   
-[context.production]
-  environment = { SPACE_ID,
-CONTENT_ID,
-apiKey,
-authDomain,
-databaseURL,
-projectId,
-storageBucket,
-messagingSenderId,
-appId}
+
 
    
