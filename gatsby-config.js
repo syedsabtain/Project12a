@@ -1,6 +1,9 @@
 var dotenv = require('dotenv');
 dotenv.config();
+
+
 module.exports = {
+  
   plugins: ["gatsby-plugin-typescript"],
   plugins: [
     {
@@ -13,6 +16,7 @@ module.exports = {
     },
     {
       resolve: "gatsby-plugin-firebase",
+      
       options: {
         credentials: {
           apiKey:  process.env.apiKey,
@@ -22,9 +26,12 @@ module.exports = {
           storageBucket: process.env.storageBucket,
           messagingSenderId:  process.env.messagingSenderId,
           appId:  process.env.appId
-        }
+        },
+        
       }
-    }
+    },
+    
+    
   ],
   
 };

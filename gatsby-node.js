@@ -1,18 +1,35 @@
 
 var path = require('path')
+var firebase = require('firebase')
+// exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
+//   if (stage === "build-html") {
+//     actions.setWebpackConfig({
+//       module: {
+//         rules: [
+//           {
+//             test: /@firebase/,
+//             use: loaders.null(),
+//           },
+//         ],
+//       },
+//     })
+//   }
+// }
 exports.onCreatePage = async ({ page, actions }) => {
   const { createPage } = actions
+
   // Only update the `/app` page.
-  // if (page.path.match(/^\/App/)) {
-  //   // page.matchPath is a special key that's used for matching pages
-  //   // with corresponding routes only on the client.
-  //   page.matchPath = "/App/*"
-  //   // Update the page.
-  //   createPage(page)
-  // }
+  if (page.path.match(/^\/Option/)) {
+    // page.matchPath is a special key that's used for matching pages
+    // with corresponding routes only on the client.
+    page.matchPath = "/Option/*"
+
+    // Update the page.
+    createPage(page)
+  }
 }
 
-exports.createPages = async({actions,graphql})=>{
+module.exports.createPages = async({actions,graphql})=>{
 
     const {createPage} = actions
 
@@ -55,9 +72,9 @@ exports.createPages = async({actions,graphql})=>{
             itemDetails: result
         }
     })
-    console.log(result.data.allContentfulBlogPost.nodes,'server')
+    // console.log(result.data.allContentfulBlogPost.nodes,'server')
 
-    result.data.allContentfulBlogPost.nodes.map((value)=>{
+    result.data.allContentfulBlogPost.nodes.forEach((value)=>{
       
       createPage({
         path:`/BLogs/${value.slug}`,

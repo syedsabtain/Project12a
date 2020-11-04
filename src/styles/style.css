@@ -30,3 +30,11 @@ text-shadow: 2px 2px #000000;
 color: rgb(0, 0, 0)!important;
 text-shadow: 2px 2px #ffffff;
 }
+.cardbg{
+    background-color: rgba(255, 255, 255, 0.788)!important;
+    color: rgb(0, 0, 0)tant;
+text-shadow: 2px 2px #e2dbdbb0;
+}
+.icon-bg{
+    color: black!important;
+}

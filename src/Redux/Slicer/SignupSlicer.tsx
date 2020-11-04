@@ -1,13 +1,18 @@
 import {createSlice} from '@reduxjs/toolkit'
 
 
+interface initial{
+    username:String,
+    islogin:boolean,
+    token:String,
+    verified:boolean,
+}
+const initialstate:initial ={
 
-const initialstate ={
-
-    username:'',
+    username:'Nothing',
     islogin:false,
-    token:'',
-    verified:'',
+    token:'Nothing',
+    verified:false,
     
 }
 

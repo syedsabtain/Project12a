@@ -1,5 +1,6 @@
 import React, { ReactNode } from 'react'
 import Header from '../Components/Header'
+import Footer from './Footer'
 type LayoutProps={
     children:ReactNode
 }
@@ -7,9 +8,11 @@ type LayoutProps={
 export default({children}:LayoutProps)=>{
 
     return(
-        <div className='container'>
+        typeof window !== `undefined` ? <div className='container'>
             <Header></Header>
             {children}
+            <Footer></Footer>
         </div>
+        : null
     )
 }
