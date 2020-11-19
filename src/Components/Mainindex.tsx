@@ -15,9 +15,9 @@ return(
 
     <div className="jumbotron  text-white rounded bg-dark mainimage text-center">
       <div className="col-md-6 px-0  mx-auto">
-        <h1 className="display-4 font-italic">Welcome to Blogs Site</h1>
-        <p className="lead my-3 ">Get updated with our latest and geniune News and informtion</p>
-        <GatsbyLink to="/BLogs" className="lead mb-0 font-weight-bold">Click Here to See Blogs</GatsbyLink>
+        <h1 className="display-4 font-italic txttitle">Welcome to Blogs Site</h1>
+        <p className="lead my-3 txttitle1">Get updated with our latest and geniune News and informtion</p>
+        <GatsbyLink to="/BLogs" className="lead mb-0 font-weight-bold btnd ">Click Here to See Blogs</GatsbyLink>
       </div>
     </div>
   </main>

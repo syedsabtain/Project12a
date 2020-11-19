@@ -5,6 +5,7 @@ import {Signupinterface} from '../Interfaces/allinterface'
 import {SignOut} from '../Firebase/FirebaseAuth'
 import {updateSignup} from '../Redux/Slicer/SignupSlicer'
 import Swal from 'sweetalert2'
+import {Helmet} from 'react-helmet'
 export default() => {
 
     const Maindata = useSelector < Signupinterface, Signupinterface > (state => state);
@@ -33,6 +34,9 @@ export default() => {
     }
     return (
         <div>
+            <Helmet>
+                <title>ShahBlog</title>
+            </Helmet>
             {Maindata.Signup.islogin
                 ? (
                     <div className="container">

@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import {useSelector,useDispatch} from 'react-redux'
 import {getvalue} from '../Redux/Slicer/ReduxSlicer'
-import '../styles/bootstrap.min.css'
-import '../styles/style.css'
 import {Link} from 'gatsby'
 
 import Layout from './Layout'
@@ -35,7 +33,7 @@ let[data,setData] = useState<any>()
 
       <div className="jumbotron  text-white rounded bg-dark bgimage text-center">
         <div className="col-md-6 px-0  mx-auto">
-          <h1 className="display-4 font-italic">Welcome to World's Best Blogs Site</h1>
+          <h1 className="display-4 font-italic txttitle2">Welcome to World's Best Blogs Site</h1>
         </div>
       </div>
 

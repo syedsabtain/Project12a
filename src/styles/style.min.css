@@ -31,10 +31,46 @@ color: rgb(0, 0, 0)!important;
 text-shadow: 2px 2px #ffffff;
 }
 .cardbg{
-    background-color: rgba(255, 255, 255, 0.788)!important;
+    background-color: rgba(255, 255, 255, 0.082)!important;
     color: rgb(0, 0, 0)tant;
 text-shadow: 2px 2px #e2dbdbb0;
+
 }
 .icon-bg{
     color: black!important;
+}
+.txttitle{
+    font-size: 40px!important;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+.txttitle1{
+    /* font-size: 40px!important; */
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+.btnd{
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 2px rgb(13, 235, 150);
+
+}
+.txttitle2{
+    font-weight: bold;
+    font: outline;
+    text-shadow: 2px 2px 2px rgb(13, 235, 150);
+    
+
+}
+.txt1{
+    color: black;
+    font-size: 40px!important;
+}
+.txt2{
+    color: white;
+    font-size: 28px!important;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+
+
 }

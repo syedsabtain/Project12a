@@ -11,7 +11,9 @@ export default({children}:LayoutProps)=>{
         typeof window !== `undefined` ? <div className='container'>
             <Header></Header>
             {children}
+            <div className='mt-5'>
             <Footer></Footer>
+            </div>
         </div>
         : null
     )
